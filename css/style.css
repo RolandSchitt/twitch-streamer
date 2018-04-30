@@ -1,0 +1,21 @@
+body {
+	background-color: grey;
+	text-align: center;
+}
+#btnRow{
+	padding: 3%;
+}
+#results{
+	text-align: left;
+	color: white;
+}
+.img-circle {
+max-width: 21%;
+}
+td{
+	width: 15%;
+}
+a{
+	color: white;
+	font-size: 1.7em;
+}
