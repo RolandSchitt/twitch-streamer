@@ -1,48 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" >
-	<head>
-		<meta charset="UTF-8">
-		<title>Twitch Streaming Status</title>
-		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<div class="container-fluid">
-			<!--- Row for entire center box ----->
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2 bg-primary">
-					<h1>Twitch Streaming Status</h1>
-					<!---- Search Box ----->
-					<form class="input-group" id="searchForm">
-							<input type="text" placeholder="search" class="form-control input-lg" id="searchBox">
-							<span class="input-group-btn">
-							<button type="button" class="btn btn-default btn-lg" id="searchBtn">
-								<i class="glyphicon glyphicon-search"></i>
-							</button>
-					</form>
-				</div>
-			</div>
-			<!--- Buttons Row ----->
-			<div class="row">
-				<div id="btnRow" class="col-xs-8 col-xs-offset-2 bg-primary">
-					<!-- Row for buttons ---->
-					<button type="button" class="btn btn-default btn-lg statusBtn" id="allBtn">ALL</button>
-					<button type="button" class="btn btn-default btn-lg statusBtn" id="onlineBtn">ONLINE</button>
-					<button type="button" class="btn btn-default btn-lg statusBtn" id="offlineBtn">OFFLINE</button>
-				</div>
-			</div>
-			<!-- Results area ---->
-			<div id="results" class="row">
-				<div class="col-xs-8 col-xs-offset-2 bg-primary">
-					<table class ="table" id="resultsTable">
-						<tr id="firstRow">
-						</tr>
-					</table>
-				</div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Twitch Streaming Status</title>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<!--- Row for entire center box ----->
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2 bg-primary">
+				<h1>Twitch Streaming Status</h1>
+				<!---- Search Box ----->
+				<form class="input-group" id="searchForm">
+						<input type="text" placeholder="search" class="form-control input-lg" id="searchBox">
+						<span class="input-group-btn">
+						<button type="button" class="btn btn-default btn-lg" id="searchBtn">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+				</form>
 			</div>
 		</div>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <script  src="js/index.js"></script>
-	</body>
+		<!--- Buttons Row ----->
+		<div class="row">
+			<div id="btnRow" class="col-xs-8 col-xs-offset-2 bg-primary">
+				<!-- Row for buttons ---->
+				<button type="button" class="btn btn-default btn-lg statusBtn" id="allBtn">ALL</button>
+				<button type="button" class="btn btn-default btn-lg statusBtn" id="onlineBtn">ONLINE</button>
+				<button type="button" class="btn btn-default btn-lg statusBtn" id="offlineBtn">OFFLINE</button>
+			</div>
+		</div>
+		<!-- Results area ---->
+		<div id="results" class="row">
+			<div class="col-xs-8 col-xs-offset-2 bg-primary">
+				<table class ="table" id="resultsTable">
+					<tr id="firstRow">
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<script  src="js/index.js"></script>
+</body>
 </html>
